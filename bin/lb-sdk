@@ -89,7 +89,7 @@ var appFile = path.resolve(argv._[0]);
 /**
  * Load and Boot LoopBack Application
  */
-var app = require(appFile);
+var app = require(appFile).default;
 // Default Values
 var context = {
   app: app,
